@@ -1,1 +1,74 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: Roboto;
+  src: url(../../police/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url(../../police/Shrikhand-Regular.ttf);
+}
+
+.content {
+  width: 100%;
+  font-family: "Roboto",Arial,sans-serif;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  margin-left: 30%;
+  margin-right: auto;
+}
+
+.bgc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.bgc--fonce {
+  background-color: #efefef;
+}
+
+.bgc--claire {
+  background-color: #f5f5f5;
+}
+
+.bgc--blanc {
+  background-color: #FFFFFF;
+}
+
+.localisation {
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+img {
+  width: 50%;
+}
+
+.titre--bold {
+  font-weight: bold;
+}
+
+.titre--bold__center {
+  text-align: center;
+}
+
+.txt--gris__center {
+  color: #7e7e7e;
+  text-align: center;
+}
+
+button {
+  background-color: #FF79DA;
+  border: 2px solid #FF79DA;
+  border-radius: 33% / 100%;
+  color: #ffffff;
+  height: 50px;
+  width: 33%;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+/*# sourceMappingURL=main.css.map */

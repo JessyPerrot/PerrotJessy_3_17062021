@@ -1,0 +1,65 @@
+@import"../2.Utils/_varialbles";
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../police/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:Shrikhand;
+    src: url(../../police/Shrikhand-Regular.ttf);
+}
+
+.content{
+    width: 100%;
+    font-family: "Roboto",Arial,sans-serif;
+}
+
+.logo{
+    display: block;
+    width: 100%;
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.bgc{
+    display: flex;
+    width: 100%;
+    &--fonce{
+        background-color: $gris-fonce;
+    }
+    &--claire{
+        background-color: $gris-claire;
+    }
+    &--blanc{
+        background-color:$blanc;
+    }
+}
+
+.localisation{
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+img{
+    width: 50%;
+}
+
+.titre{
+    &--bold{
+        font-weight: bold;
+        &__center{
+            text-align: center;
+        }
+    }
+}
+
+.txt{
+    &--gris{
+        &__center{
+            color: $gris-txt;
+            text-align: center;
+        }
+    }
+}
+
+
