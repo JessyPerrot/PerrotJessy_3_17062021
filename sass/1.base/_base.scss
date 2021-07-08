@@ -22,10 +22,10 @@
 }
 
 .bgc{
-    display: flex;
     width: 100%;
     &--fonce{
         background-color: $gris-fonce;
+        margin-bottom: -20px;
     }
     &--claire{
         background-color: $gris-claire;
@@ -37,7 +37,7 @@
 
 .localisation{
     text-align: center;
-    margin-bottom: 0%;
+    margin-bottom: 0px;
 }
 
 img{
@@ -50,6 +50,9 @@ img{
         &__center{
             text-align: center;
         }
+        &__left1{
+            margin-bottom: -30px;
+        }
     }
 }
 
@@ -60,6 +63,51 @@ img{
             text-align: center;
         }
     }
+}
+
+.conteneur{
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+.num--entoure{
+    border: 2px solid #8A2BE2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    right: 5px;
+    color: white;
+    background-color:#8A2BE2 ;
+
+    & p{
+    position: relative;
+    bottom: 10px;
+    }
+}
+
+.cadre--arrondis{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+    border: 2px solid $gris-claire;
+    border-radius: 5% / 100%; 
+    background-color: $gris-claire;
+    font-size: 20px;
+
+        & i{
+            position: relative;
+            top: 23px;
+            right: 10px;
+        }
 }
 
 
