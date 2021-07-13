@@ -15,10 +15,8 @@
 }
 
 .logo{
-    display: block;
-    width: 100%;
-    margin-left: 30%;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .bgc{
@@ -32,6 +30,8 @@
     }
     &--blanc{
         background-color:$blanc;
+        display:flex ;
+        flex-direction: column;
     }
 }
 
@@ -40,9 +40,6 @@
     margin-bottom: 0px;
 }
 
-img{
-    width: 50%;
-}
 
 .titre{
     &--bold{
@@ -81,7 +78,7 @@ img{
     text-align: center;
     position: relative;
     top: 50px;
-    right: 5px;
+    right: 50px;
     color: white;
     background-color:#8A2BE2 ;
 
@@ -109,5 +106,69 @@ img{
             right: 10px;
         }
 }
+
+.restaurant{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    height: 200px;
+    padding-bottom: 100px;
+
+    & img{
+        width: 350px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+.new {
+    color: $green-plc;
+    background-color: $green-bgc;
+    width: 20%;
+    text-align: center;
+    border-radius: 10% ;
+    height: 30px;
+    position: relative;
+    top: 40px;
+    left: 270px;
+    & p{
+        position: relative;
+        top: 5px;
+    }
+}
+
+.imgnew {
+    margin-top: -46px;
+}
+
+.txt--img{
+    align-items: flex-start;
+    position: relative;
+    bottom: 15px;
+    margin-bottom: -50px;
+    padding-left: 10px;
+
+    & p{
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+.coeur{
+    font-size: 150%;
+    align-self: flex-end;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+
 
 
