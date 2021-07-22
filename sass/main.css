@@ -84,6 +84,10 @@
   text-align: center;
 }
 
+.fonctionnement {
+  margin-left: 5%;
+}
+
 .conteneur {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +107,7 @@
   text-align: center;
   position: relative;
   top: 50px;
-  right: 50px;
+  left: 10    px;
   color: white;
   background-color: #8A2BE2;
 }
@@ -187,8 +191,8 @@
 
 @media (max-width: 1024px) {
   .image {
-    width: 500px;
-    height: 250px;
+    width: 900px;
+    height: 400px;
   }
 }
 
@@ -203,8 +207,8 @@
 
 @media (max-width: 1024px) {
   .image img {
-    width: 500px;
-    height: 250px;
+    width: 900px;
+    height: 400px;
   }
 }
 
@@ -222,7 +226,8 @@
 
 @media (max-width: 1024px) {
   .new {
-    left: 370px;
+    left: 600px;
+    top: 50px;
   }
 }
 
@@ -268,6 +273,15 @@
   margin-bottom: -20px;
 }
 
+@media (max-width: 1024px) {
+  .txt--logo {
+    text-align: start;
+    margin-left: 40px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
 footer {
   margin-top: -50px;
 }
@@ -276,6 +290,15 @@ footer {
   text-decoration: none;
   color: #FFFFFF;
   text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .footer--menu {
+    text-align: start;
+    margin-left: 40px;
+    font-size: 20px;
+  }
 }
 
 .footer--menu a {
@@ -286,11 +309,12 @@ footer {
 button {
   background-color: #FF79DA;
   border: 2px solid #FF79DA;
-  border-radius: 33% / 100%;
+  border-radius: 30px;
   color: #ffffff;
   height: 50px;
   width: 33%;
   margin-left: 33%;
   margin-right: 33%;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */
