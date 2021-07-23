@@ -306,6 +306,18 @@ footer {
   color: #FFFFFF;
 }
 
+.fa-heart::before {
+  content: "\f004";
+  -webkit-transition: color 1s ease-out;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: #9356DC;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 button {
   background-color: #FF79DA;
   border: 2px solid #FF79DA;

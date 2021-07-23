@@ -246,3 +246,13 @@ footer{margin-top: -50px;}
         color: $blanc;
     }
 }
+
+.fa-heart::before {
+    content: "\f004";
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: $clr-primary;
+    font-weight: bold;
+    cursor: pointer;
+}
