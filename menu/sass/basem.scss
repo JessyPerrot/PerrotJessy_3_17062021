@@ -1,0 +1,27 @@
+@import "../../sass/2.Utils/varialbles";
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.photo{
+    & img{
+    width: 300px;
+    }
+}
+
+.bgc{
+
+    &--claire{
+        background-color: $gris-claire;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $gris-claire;
+        border-top-right-radius:50px ;
+        border-top-left-radius: 50px;
+    }
+    &--blanc{
+        background-color: $blanc;
+    }
+}
