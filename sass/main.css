@@ -320,7 +320,7 @@ footer {
 
 button {
   background-color: #FF79DA;
-  border: 2px solid #FF79DA;
+  border: 1px solid #FF79DA;
   border-radius: 30px;
   color: #ffffff;
   height: 50px;
@@ -328,5 +328,7 @@ button {
   margin-left: 33%;
   margin-right: 33%;
   margin-bottom: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#f071da), color-stop(#e06adb), color-stop(#cf64dc), color-stop(#bd5fdc), color-stop(#a95adc), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da, #f071da, #e06adb, #cf64dc, #bd5fdc, #a95adc, #9356dc);
 }
 /*# sourceMappingURL=main.css.map */

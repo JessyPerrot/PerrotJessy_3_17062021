@@ -13,6 +13,10 @@
 
 .bgc{
 
+    &--noir{
+        background-color:black ;
+    }
+
     &--claire{
         background-color: $gris-claire;
         display: flex;
@@ -23,5 +27,78 @@
     }
     &--blanc{
         background-color: $blanc;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: 1px solid $blanc;
+        border-radius: 10px;
     }
 }
+
+.fa-heart::before {
+    content: "\f004";
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: $clr-primary;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.txt{
+
+    &--logo{
+        color: $blanc;
+        text-decoration: none;
+        font-family: Shrikhand;
+        text-align: center;
+        font-size: 150%;
+        margin-bottom: -20px;
+    
+        @media (max-width: 1024px){
+            text-align: start;
+            margin-left: 40px;
+            padding-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    &--underline{   
+            &__tertiaire{
+                width: 65px;
+                height: 50px;
+                border-bottom: 3px solid $clr-tertiaire;
+        }
+    }
+}
+
+.footer--menu{
+    text-decoration: none;
+    color: $blanc;
+    text-align: center;
+    padding-bottom: 30px;
+
+    @media (max-width: 1024px){
+        text-align: start;
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    & a{
+        text-decoration: none;
+        color: $blanc;
+    }
+}
+
+button{
+    background-color: $clr-secondary;
+    border: 1px solid $clr-secondary;
+    border-radius:30px;
+    color:#ffffff ;
+    height: 50px;
+    width: 33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 50px;
+    background: linear-gradient(180deg, #ff79da, #f071da, #e06adb, #cf64dc, #bd5fdc, #a95adc, #9356dc);
+    }

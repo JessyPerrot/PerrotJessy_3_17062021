@@ -2,7 +2,7 @@
 
 button{
     background-color: $clr-secondary;
-    border: 2px solid $clr-secondary;
+    border: 1px solid $clr-secondary;
     border-radius:30px;
     color:#ffffff ;
     height: 50px;
@@ -10,4 +10,5 @@ button{
     margin-left: 33%;
     margin-right: 33%;
     margin-bottom: 50px;
+    background: linear-gradient(180deg, #ff79da, #f071da, #e06adb, #cf64dc, #bd5fdc, #a95adc, #9356dc);
     }
