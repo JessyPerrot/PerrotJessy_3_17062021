@@ -1,10 +1,24 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../../police/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url(../../police/Shrikhand-Regular.ttf);
+}
+
 .content {
   width: 100%;
   height: 100%;
 }
 
 .photo img {
-  width: 300px;
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 
 .bgc--noir {
@@ -12,6 +26,7 @@
 }
 
 .bgc--claire {
+  width: 100%;
   background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,9 +38,17 @@
   border: 1px solid #f5f5f5;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
+  position: relative;
+  bottom: 20px;
 }
 
 .bgc--blanc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #FFFFFF;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -33,6 +56,102 @@
   margin-right: 15px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu .txt--bold {
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.menu .txt--soft {
+  margin-left: 30px;
+  font-size: 25px;
+  margin-top: -30px;
+}
+
+.prix {
+  font-weight: bold;
+  font-size: 50px;
+  padding-right: 50px;
+  position: relative;
+  top: 20px;
+}
+
+.animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 50px;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  left: 150px;
+}
+
+.animation:hover {
+  -webkit-animation: rotation 1000ms 150ms both;
+          animation: rotation 1000ms 150ms both;
+}
+
+.check {
+  background-color: #99E2D0;
+  color: white;
+  height: 100%;
+  width: 150px;
+}
+
+.check i {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+@-webkit-keyframes rotation {
+  1% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  1% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-150px);
+            transform: translateX(-150px);
+    opacity: 1;
+  }
+}
+
+.animation:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 450ms 500ms ease-out;
+  transition: 450ms 500ms ease-out;
 }
 
 .fa-heart::before {
