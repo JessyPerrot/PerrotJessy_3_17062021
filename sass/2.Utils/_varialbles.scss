@@ -7,3 +7,8 @@ $blanc: #FFFFFF;
 $gris-txt: #7e7e7e;
 $green-plc : #008000;
 $green-bgc: #99E2D0;
+$size: 25px;
+$number-bars: 3;
+$animation-dur: 1000ms;
+$animation-delay: $animation-dur / $number-bars;
+$colour-bars: $clr-primary;

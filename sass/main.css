@@ -8,6 +8,142 @@
   src: url(../../police/Shrikhand-Regular.ttf);
 }
 
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load-pg 333.33333ms both 2150ms ease-in-out;
+          animation: load-pg 333.33333ms both 2150ms ease-in-out;
+}
+
+.loading__load {
+  width: 125px;
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+}
+
+.loading__load__bar {
+  height: 100%;
+  width: 25px;
+  background-color: #9356DC;
+  -webkit-animation: bars 1000ms both infinite cubic-bezier(0.9, 0.83, 0.83, 0.67) alternate;
+          animation: bars 1000ms both infinite cubic-bezier(0.9, 0.83, 0.83, 0.67) alternate;
+}
+
+.loading__load__bar--1 {
+  -webkit-animation-delay: 333.33333ms;
+          animation-delay: 333.33333ms;
+}
+
+.loading__load__bar--1-inv {
+  -webkit-animation-delay: 333.33333ms;
+          animation-delay: 333.33333ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+.loading__load__bar--2 {
+  -webkit-animation-delay: 666.66667ms;
+          animation-delay: 666.66667ms;
+}
+
+.loading__load__bar--2-inv {
+  -webkit-animation-delay: 666.66667ms;
+          animation-delay: 666.66667ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+.loading__load__bar--3 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.loading__load__bar--3-inv {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  animation-direction: alternate-reverse;
+  background-color: #FF79DA;
+}
+
+@-webkit-keyframes load-pg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes load-pg {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scaleY(0.7);
+            transform: scaleY(0.7);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 0;
+  }
+}
+
+@keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.2);
+            transform: scaleY(0.2);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scaleY(0.7);
+            transform: scaleY(0.7);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 0;
+  }
+}
+
 .content {
   width: 100%;
   height: 100%;

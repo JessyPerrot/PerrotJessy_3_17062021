@@ -19,6 +19,38 @@
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
+  top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .photo img {
+    height: 20%;
+  }
+}
+
+.titre {
+  text-align: center;
+}
+
+header {
+  position: relative;
+  top: 30px;
+}
+
+header i {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+
+header img {
+  display: block;
+  margin: auto;
+  position: relative;
+  bottom: 20px;
 }
 
 .bgc--noir {
@@ -39,7 +71,7 @@
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   position: relative;
-  bottom: 20px;
+  bottom: 0px;
 }
 
 .bgc--blanc {
@@ -58,6 +90,10 @@
   border-radius: 10px;
   height: 150px;
   overflow: hidden;
+}
+
+.titre {
+  font-size: 50px;
 }
 
 .menu {
@@ -222,5 +258,23 @@ button {
   margin-bottom: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(#f071da), color-stop(#e06adb), color-stop(#cf64dc), color-stop(#bd5fdc), color-stop(#a95adc), to(#9356dc));
   background: linear-gradient(180deg, #ff79da, #f071da, #e06adb, #cf64dc, #bd5fdc, #a95adc, #9356dc);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=basem.css.map */
