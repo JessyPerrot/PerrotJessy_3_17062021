@@ -139,7 +139,7 @@ header img {
   left: 150px;
 }
 
-.animation:hover {
+.bgc--blanc:hover > .animation {
   -webkit-animation: rotation 1000ms 150ms both;
           animation: rotation 1000ms 150ms both;
 }

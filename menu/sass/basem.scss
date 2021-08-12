@@ -121,11 +121,14 @@ header img{
     border-bottom-right-radius: 10px;
     position: relative;
     left: 150px; 
+}
 
-
-    &:hover{animation: rotation 1000ms 150ms both;
+.bgc--blanc{
+    &:hover{
+        & > .animation{animation: rotation 1000ms 150ms both;
 
     }
+}
 }
 
 .check{
