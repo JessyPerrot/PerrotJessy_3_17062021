@@ -123,6 +123,33 @@ header img{
     left: 150px; 
 }
 
+.menu__entries, .menu__dishes, .menu__desserts{
+    animation: appear 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.delay1{
+    animation-delay: 0.1s;
+}
+
+.delay2{
+    animation-delay: 0.3s;
+}
+
+.delay3{
+    animation-delay: 0.6s;
+}
+
+
 .bgc--blanc{
     &:hover{
         & > .animation{animation: rotation 1000ms 150ms both;
