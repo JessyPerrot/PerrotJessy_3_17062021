@@ -190,7 +190,8 @@
 
 .localisation {
   text-align: center;
-  margin-bottom: 0px;
+  position: relative;
+  bottom: 10px;
 }
 
 .titre {
@@ -243,7 +244,7 @@
   text-align: center;
   position: relative;
   top: 50px;
-  left: 10    px;
+  left: 10px;
   color: white;
   background-color: #8A2BE2;
 }
